@@ -1,3 +1,12 @@
+body { 
+    padding-top: -65px; 
+}
+
+nav {
+    opacity: 0.5;
+    z-index: 1;
+}
+
 .para-image {
     width: 100%;
 }
@@ -12,5 +21,36 @@
 }
 
 .parallax-container {
-    height: 350px;
+    height: 300px;
+    margin-left: -1px;
+}
+
+.titleName {
+    margin-left: 2vh;
+}
+
+.social {
+    padding: 0 1vh;
+    height: 30px;
+    border-radius: 7px;
+}
+
+.page-footer {
+    padding-bottom: 1vh;
+}
+
+@media (max-width: 600px) {
+    .parallax-container {
+        height: 200px;
+        margin-left: -1px;
+    }
+
+    .avatar-personal {
+        border-radius: 50%;
+        margin-top: -20vh;
+    }
+
+    .footer-links {
+        float: right;
+    }
 }
