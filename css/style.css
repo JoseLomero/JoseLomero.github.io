@@ -1,0 +1,16 @@
+.para-image {
+    width: 100%;
+}
+
+.avatar-personal {
+    border-radius: 50%;
+    margin-top: -13vh;
+}
+
+#principal {
+    height: 70vh;
+}
+
+.parallax-container {
+    height: 350px;
+}
