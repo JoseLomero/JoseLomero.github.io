@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+
+import Navbar from 'react-bootstrap/NavBar';
+import Nav from 'react-bootstrap/Nav';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import './nav.css';
 
-class NavBar extends Component {
+class NavigationBar extends Component {
     constructor(props) {
         super(props);
         this.state = {};
@@ -9,9 +13,19 @@ class NavBar extends Component {
 
     render() {
         return (
-            <div className="nav"></div>
+            <Navbar bg="light" expand="lg">
+                <Navbar.Brand href="/">Jose's webpage</Navbar.Brand>
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="mr-auto">
+                        <Nav.Link href="/">Home</Nav.Link>
+                        <NavDropdown title="Componentes" id="nav-dropdown">
+                            <NavDropdown.Item href="/calendario">Calendario</NavDropdown.Item>
+                        </NavDropdown>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar >
         );
     }
 }
 
-export default NavBar;
+export default NavigationBar;
