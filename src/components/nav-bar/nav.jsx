@@ -13,7 +13,7 @@ class NavigationBar extends Component {
 
     render() {
         return (
-            <Navbar bg="light" expand="lg">
+            <Navbar bg="dark" variant="dark" expand="lg">
                 <Navbar.Brand href="/">Jose's webpage</Navbar.Brand>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">

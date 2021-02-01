@@ -10,15 +10,15 @@ import './App.css';
 
 function App() {
   return (
-    <Container>
-      <BrowserRouter>
-        <NavigationBar />
+    <BrowserRouter>
+      <NavigationBar />
+      <Container>
         <Switch>
           <Route exact path='/' component={MainPage} />
           <Route path='/calendario' component={Calendario} />
         </Switch>
-      </BrowserRouter>
-    </Container>
+      </Container>
+    </BrowserRouter>
   );
 }
 
