@@ -15,7 +15,8 @@ class NavigationBar extends Component {
         return (
             <Navbar bg="dark" variant="dark" expand="lg">
                 <Navbar.Brand href="/">Jose's webpage</Navbar.Brand>
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Link href="/">Home</Nav.Link>
                         <NavDropdown title="Componentes" id="nav-dropdown">
