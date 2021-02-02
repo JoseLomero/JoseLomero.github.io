@@ -9,10 +9,11 @@ import './App.css';
 
 
 function App() {
+
   return (
     <BrowserRouter>
       <NavigationBar />
-      <Container>
+      <Container fluid>
         <Switch>
           <Route exact path='/' component={MainPage} />
           <Route path='/calendario' component={Calendario} />

@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import { Container } from 'react-bootstrap';
 import Card from '../card/card';
+import Presentation from '../presentation/presentation';
+import ImgAvatar from '../../img/marianne.png';
 
 class MainPage extends Component {
     constructor(props) {
@@ -9,7 +12,11 @@ class MainPage extends Component {
 
     render() {
         return (
-            <Card text={"Hello there!"} img="www.this-is-an-url-com" />
+            <Container>
+                <Presentation />
+                <Card text={"Hello there!"} img={ImgAvatar} />
+                <Presentation />
+            </Container>
         );
     }
 }

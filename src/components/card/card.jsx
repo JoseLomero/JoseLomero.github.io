@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Container, Card as Tarjeta } from 'react-bootstrap';
 import './card.css';
 
 class Card extends Component {
@@ -18,14 +19,18 @@ class Card extends Component {
     }
 
     render() {
+        // <div className={this.state.classCard}>
         return (
-            // <div className={this.state.classCard}>
-            <div>
-                <p>{this.props.text}</p>
-                <p>{this.props.img}</p>
-                {/* <img src={imageUrl} /> */}
-                {/* <div><p>{text}</p></div> */}
-            </div>
+            <Container>
+                <div className="visible">
+                    <Tarjeta style={{ width: '50vh'}}>
+                        <Tarjeta.Body>
+                            <img className="logo-card" alt="avatar" src={this.props.img} />
+                            <Tarjeta.Text className="tarjeta-text-stylizer">{this.props.text}</Tarjeta.Text>
+                        </Tarjeta.Body>
+                    </Tarjeta>
+                </div>
+            </Container>
         );
     }
 }

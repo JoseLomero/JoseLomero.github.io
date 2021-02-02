@@ -3,13 +3,12 @@
 }
 
 .visible {
-  width: 315px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  z-index: 3;
-  left: 20%;
+  /* position: absolute; */
+  /* z-index: 3; */
+  /* left: 20%; */
   animation-name: visible;
   animation-duration: 1s;
   animation-timing-function: linear;
@@ -22,10 +21,8 @@
 .visible div {
   width: 220px;
   height: 50px;
-  background-color: white;
-  opacity: 0.7;
-  clip-path: polygon(10% 0%, 100% 1%, 100% 100%, 10% 100%, 0% 50%);
-  border-right: 8px solid #f0ff54;
+  background-color: var(--color-white);
+  /* opacity: 0.7; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,4 +44,13 @@
     opacity: 1;
     transform: translateX(30px);
   }
+}
+
+.logo-card {
+    height: 30px;
+    width: 30px;
+}
+
+.tarjeta-text-stylizer {
+
 }

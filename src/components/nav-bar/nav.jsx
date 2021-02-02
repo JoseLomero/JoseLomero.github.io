@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import Navbar from 'react-bootstrap/NavBar';
 import Nav from 'react-bootstrap/Nav';
@@ -14,13 +15,13 @@ class NavigationBar extends Component {
     render() {
         return (
             <Navbar bg="dark" variant="dark" expand="lg">
-                <Navbar.Brand href="/">Jose's webpage</Navbar.Brand>
+                <Link to="/"><Navbar.Brand>Jose's Webpage</Navbar.Brand></Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Item><Link to="/" className="navigator-link">Home</Link></Nav.Item>
                         <NavDropdown title="Componentes" id="nav-dropdown">
-                            <NavDropdown.Item href="/calendario">Calendario</NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/calendario">Calendario</Link></NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
