@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import Presentation from '../presentation/presentation';
-import 'aos/dist/aos.css';
+import Presentation from '../../components/presentation/presentation';
+import Card from '../../components/card/card';
 
 import { Container, Row } from 'react-bootstrap';
-import Card from '../card/card';
+import './mainPage.css';
 
 import ImgAvatar from '../../img/marianne.png';
 import ImgDuke from '../../img/dukemon.jpg';
 import ImgBoth from '../../img/bothmon.png';
-import './mainPage.css';
 
 class MainPage extends Component {
     constructor(props) {
@@ -32,7 +31,13 @@ class MainPage extends Component {
                         img={ImgAvatar}
                     />
                     <Presentation
-                        aos={"fade-up"}
+                        aos={"fade-right"}
+                        aosEasing={"linear"}
+                        aos-duration={"15000"}
+                        img={ImgBoth}
+                    />
+                    <Presentation
+                        aos={"fade-left"}
                         aosEasing={"linear"}
                         aos-duration={"15000"}
                         img={ImgBoth}

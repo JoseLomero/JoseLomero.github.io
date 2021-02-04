@@ -1,7 +1,8 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Aos from 'aos';
 import NavigationBar from "./components/nav-bar/nav";
-import MainPage from './components/main-page/mainPage';
+import MainPage from './sections/main-page/mainPage';
+import Components from './sections/components-page/components';
 import Calendario from './components/calendar/calendar';
 
 // Bootstrap
@@ -23,6 +24,7 @@ function App() {
       <Container fluid>
         <Switch>
           <Route exact path='/' component={MainPage} />
+          <Route path='/components' component={Components} />
           <Route path='/calendario' component={Calendario} />
         </Switch>
       </Container>

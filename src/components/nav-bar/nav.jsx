@@ -19,7 +19,7 @@ class NavigationBar extends Component {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Item><Link to="/" className="navigator-link">Home</Link></Nav.Item>
-                        <Nav.Item><Link to="/calendario" className="navigator-link">Componentes</Link></Nav.Item>
+                        <Nav.Item><Link to="/components" className="navigator-link">Componentes</Link></Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar >

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Container, Card as Tarjeta } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
+import { Container, Card as Tarjeta, Button } from 'react-bootstrap';
 import './card.css';
 
 class Card extends Component {
@@ -19,14 +21,20 @@ class Card extends Component {
     }
 
     render() {
-        // <div className={this.state.classCard}>
+        if (this.props.button) {
+            const buttonHtml = ''
+        }
+
         return (
             <Container>
                 <div className="visible">
                     <Tarjeta style={{ width: '50vh'}}>
+                        <Tarjeta.Title>{this.props.title}</Tarjeta.Title>
                         <Tarjeta.Body>
                             <img className="logo-card" alt="avatar" src={this.props.img} />
                             <Tarjeta.Text className="tarjeta-text-stylizer">{this.props.text}</Tarjeta.Text>
+                            
+                            <Button variant="secondary"><Link to="/calendario" className="link-styler">¡Puedes verlo aqui!</Link></Button>
                         </Tarjeta.Body>
                     </Tarjeta>
                 </div>
