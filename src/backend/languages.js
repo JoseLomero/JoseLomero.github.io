@@ -1,5 +1,5 @@
-export default [{
-  "Basics": [
+export default {
+  "basics": [
     {
       name: 'HTML5',
       url: '/img/languages/html.png'
@@ -13,7 +13,7 @@ export default [{
       url: '/img/languages/javascript.png'
     },
   ],
-  "FrontEnd": [
+  "frontend": [
     {
       name: 'React',
       url: '/img/languages/react.png'
@@ -27,7 +27,7 @@ export default [{
       url: '/img/languages/jquery.png'
     },
   ],
-  "BackEnd": [
+  "backend": [
     {
       name: 'PHP',
       url: '/img/languages/php.png'
@@ -41,7 +41,7 @@ export default [{
       url: '/img/languages/java.png'
     },
   ],
-  "Databases": [
+  "databases": [
     {
       name: 'SQL',
       url: '/img/languages/sql.png'
@@ -51,7 +51,7 @@ export default [{
       url: '/img/languages/mongodb.png'
     },
   ],
-  "Other Stuff": [
+  "other": [
     {
       name: 'Git',
       url: '/img/languages/git.png'
@@ -66,4 +66,4 @@ export default [{
     },
   ],
 
-}]
+};
