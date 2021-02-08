@@ -1,12 +1,7 @@
 img {
-    width: 100%;
+  width: 100%;
 }
 
-.link-styler {
-    color: var(--white);
-}
-
-.link-styler:hover {
-    color: var(--white);
-    text-decoration: none;
+.git-button {
+    float: right;
 }

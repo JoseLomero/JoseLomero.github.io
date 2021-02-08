@@ -22,8 +22,15 @@ class Card extends Component {
                             <Tarjeta.Text className="tarjeta-text-stylizer">{this.props.text}</Tarjeta.Text>
                             {
                                 this.props.internal ?
-                                <Link to={this.props.link} className="link-styler"><Button variant="secondary">¡Puedes verlo aqui!</Button></Link>
-                                : <a href={"https://www." + this.props.link} className="link-styler"><Button variant="secondary">¡Puedes verlo aqui!</Button></a>
+                                    <Link to={this.props.link} className="link-styler"><Button variant="info">¡Puedes verlo aqui!</Button></Link>
+                                    : <a href={"https://www." + this.props.link} className="link-styler"><Button variant="info">¡Puedes verlo aqui!</Button></a>
+                            }
+                            {
+                                this.props.git ?
+                                    <a href={this.props.git} className="link-styler git-button">
+                                        <Button variant="info">Puedes verlo en Git!</Button>
+                                    </a>
+                                    : null
                             }
                         </Tarjeta.Body>
                     </Tarjeta>
