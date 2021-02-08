@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import 'moment/locale/es';
-import events from '../../backend/events'
-import Swal from 'sweetalert2'
+import events from '../../backend/events';
+import Swal from 'sweetalert2';
 
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import './calendar-styles.css';
