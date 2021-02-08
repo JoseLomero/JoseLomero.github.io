@@ -8,10 +8,31 @@ class Header extends Component {
         this.state = {};
     }
 
+
     render() {
+        const sectionStyle = {
+            // width: "100%",
+            // height: "400px",
+            backgroundImage: "url(" + this.props.img + ")"
+        };
+
         return (
-            <div className="img-header">
-                <img src={this.props.url} alt="header"/>
+            <div
+                className="hero"
+                style={sectionStyle}
+                data-aos={this.props.aos}
+                data-aos-easing={this.props.aosEasing}
+                data-aos-duration={this.props.aosDuration}>
+
+                <div className="hero-inner">
+                    <h1>{this.props.title}</h1>
+                    {this.props.avatar ?
+                        <div className="portarit-icon">
+                            <img src={this.props.avatar} alt="portrait" />
+                        </div>
+                        : null
+                    }
+                </div>
             </div>
         );
     }

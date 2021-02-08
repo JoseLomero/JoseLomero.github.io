@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Card } from 'react-bootstrap';
 
+import { Card } from 'react-bootstrap';
 import './presentation.css';
 
 class Presentation extends Component {
@@ -20,7 +20,7 @@ class Presentation extends Component {
                     border="light"
                     className="text-center"
                     style={{ width: '70vw' }}>
-                    <Card.Img variant="top" alt="img" src={this.props.img} />
+                    <Card.Img variant="left" alt="img" src={this.props.img} />
                     <Card.Body>
                         <Card.Title>Jose</Card.Title>
                         <Card.Text>

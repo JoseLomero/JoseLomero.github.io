@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+// import Card from '../../components/card/card';
 import { Container, Row, Col } from 'react-bootstrap';
 import './img-gallery.css';
 
