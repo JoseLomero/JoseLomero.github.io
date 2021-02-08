@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Card from '../../components/card/card';
 
+// Bootstrap and styles
 import { Container, Row, Col } from 'react-bootstrap';
 import './portafolio.css';
 

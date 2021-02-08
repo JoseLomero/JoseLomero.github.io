@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
-// import Header from '../../components/header/header';
+
+// Components
+import Header from '../../components/header/header';
 import Presentation from '../../components/presentation/presentation';
 import ImgGallery from '../../components/img-gallery/img-gallery';
+
+// Other Imports
 import languages from '../../backend/languages';
 
-
+// Bootstrap and styles
 import { Container, Row, Card as CardBootstrap } from 'react-bootstrap';
 import './mainPage.css';
 class MainPage extends Component {
@@ -15,14 +19,16 @@ class MainPage extends Component {
 
     render() {
         return (
-            <Container>
-                <section className="hero">
-                    {/* <Header url={"/img/headers/officer.jpg"} /> */}
-                    <div className="hero-inner">
-                        <h1>Conoce mejor a</h1>
-                        <h1>Jose Manuel</h1>
-                    </div>
-                </section>
+            <>
+                <Header
+                    title={"Conóceme mejor"}
+                    img={"/img/headers/employee.jpg"}
+                    avatar={"/img/portrait.png"}
+
+                    aos={"fade-right"}
+                    aosEasing={"linear"}
+                    aos-duration={"1500"}
+                />
                 <Row className="content-center">
                     <Presentation
                         aos={"fade-right"}
@@ -48,7 +54,7 @@ class MainPage extends Component {
                         </CardBootstrap>
                     </div>
                 </Row>
-            </Container>
+            </>
         );
     }
 }

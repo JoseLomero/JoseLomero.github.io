@@ -1,15 +1,21 @@
+import React, { useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import Aos from 'aos';
-import NavigationBar from "./components/nav-bar/nav";
+
+// Sections
 import MainPage from './sections/main-page/mainPage';
 import Components from './sections/components-page/components';
 import Portafolio from './sections/portafolio-page/portafolio';
 import Contact from './sections/contact-page/contact';
+
+// Components
+import NavigationBar from "./components/nav-bar/nav";
 import Calendario from './components/calendar/calendar';
 
+// Effects
+import Aos from 'aos';
 // Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
+import { Container, Button } from 'react-bootstrap';
 
 // Internal Import
 import "aos/dist/aos.css";
@@ -19,10 +25,27 @@ import './App.css';
 Aos.init();
 
 function App() {
+  const [showScroll, setShowScroll] = useState(false)
+
+  const checkScrollTop = () => {
+    if (!showScroll && window.pageYOffset > 400) {
+      setShowScroll(true)
+    } else if (showScroll && window.pageYOffset <= 400) {
+      setShowScroll(false)
+    }
+  };
+
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  window.addEventListener('scroll', checkScrollTop)
+
 
   return (
     <BrowserRouter>
       <NavigationBar />
+      <Button className="scrollTop" onClick={scrollTop} style={{ height: 40, display: showScroll ? 'flex' : 'none' }}>Top</Button>
       <Container className="fullwidth" fluid>
         <Switch>
           <Route exact path='/' component={MainPage} />
