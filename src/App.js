@@ -23,7 +23,7 @@ function App() {
   return (
     <BrowserRouter>
       <NavigationBar />
-      <Container fluid>
+      <Container className="fullwidth" fluid>
         <Switch>
           <Route exact path='/' component={MainPage} />
           <Route path='/components' component={Components} />

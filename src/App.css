@@ -1,7 +1,15 @@
 :root {
   --color-white: #FFF;
+  --color-black: rgb(44, 44, 44);
   --color-gray: #CCC;
   --background-color: rgba(204, 204, 204, 0.747);
+  --shadow-color:  rgba(204, 204, 204);
   
   background-color: var(--background-color);
+}
+
+.fullwidth {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
