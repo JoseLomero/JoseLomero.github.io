@@ -3,6 +3,8 @@ import Aos from 'aos';
 import NavigationBar from "./components/nav-bar/nav";
 import MainPage from './sections/main-page/mainPage';
 import Components from './sections/components-page/components';
+import Portafolio from './sections/portafolio-page/portafolio';
+import Contact from './sections/contact-page/contact';
 import Calendario from './components/calendar/calendar';
 
 // Bootstrap
@@ -25,6 +27,8 @@ function App() {
         <Switch>
           <Route exact path='/' component={MainPage} />
           <Route path='/components' component={Components} />
+          <Route path='/portafolio' component={Portafolio} />
+          <Route path='/contact' component={Contact} />
           <Route path='/calendario' component={Calendario} />
         </Switch>
       </Container>
