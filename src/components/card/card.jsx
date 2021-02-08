@@ -21,20 +21,20 @@ class Card extends Component {
     }
 
     render() {
-        if (this.props.button) {
-            const buttonHtml = ''
-        }
-
         return (
             <Container>
                 <div className="visible">
-                    <Tarjeta style={{ width: '50vh'}}>
+                    <Tarjeta>
                         <Tarjeta.Title>{this.props.title}</Tarjeta.Title>
                         <Tarjeta.Body>
-                            <img className="logo-card" alt="avatar" src={this.props.img} />
+                            <img className="logo-card" alt="avatar" src={process.env.PUBLIC_URL + this.props.img} />
+
                             <Tarjeta.Text className="tarjeta-text-stylizer">{this.props.text}</Tarjeta.Text>
-                            
-                            <Button variant="secondary"><Link to="/calendario" className="link-styler">¡Puedes verlo aqui!</Link></Button>
+                            {
+                                this.props.internal ?
+                                <Link to={this.props.link} className="link-styler"><Button variant="secondary">¡Puedes verlo aqui!</Button></Link>
+                                : <a href={"https://www." + this.props.link} className="link-styler"><Button variant="secondary">¡Puedes verlo aqui!</Button></a>
+                            }
                         </Tarjeta.Body>
                     </Tarjeta>
                 </div>
