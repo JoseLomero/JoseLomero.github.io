@@ -7,17 +7,7 @@ import './card.css';
 class Card extends Component {
     constructor(props) {
         super(props);
-        this.state = { classCard: 'hidden' };
-    }
-
-    componentDidMount() {
-        window.onscroll = () => this.handleAnimation();
-    };
-
-    handleAnimation = () => {
-        if (document.documentElement.scrollTop > 50) {
-            this.setState({ classCard: 'visible' });
-        };
+        this.state = {};
     }
 
     render() {
