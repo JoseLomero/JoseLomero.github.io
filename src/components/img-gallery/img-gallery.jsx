@@ -1,43 +1,43 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
-import { Container, Card as Tarjeta, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import './img-gallery.css';
 
 class ImgGallery extends Component {
     constructor(props) {
         super(props);
-        this.state = { classCard: 'hidden' };
+        this.state = {};
     }
 
-    componentDidMount() {
-        window.onscroll = () => this.handleAnimation();
-    };
+    getAllItems = (elements) => {
+        let items = [];
 
-    handleAnimation = () => {
-        if (document.documentElement.scrollTop > 50) {
-            this.setState({ classCard: 'visible' });
-        };
+        elements.forEach(element => {
+            items.push(<Col>
+                <div className="center-placer"
+                    data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0">
+                    <div>
+                        <img src={element.url} alt={element.name} className="language-icon" />
+                        <h5>{element.name}</h5>
+                    </div>
+                </div>
+            </Col>);
+        });
+        return items;
     }
 
     render() {
+        const items = this.getAllItems(this.props.language)
+
         return (
             <Container>
-                <div className="visible">
-                    <Tarjeta>
-                        <Tarjeta.Title>{this.props.title}</Tarjeta.Title>
-                        <Tarjeta.Body>
-                            <img className="logo-card" alt="avatar" src={process.env.PUBLIC_URL + this.props.img} />
-
-                            <Tarjeta.Text className="tarjeta-text-stylizer">{this.props.text}</Tarjeta.Text>
-                            {
-                                this.props.internal ?
-                                <Link to={this.props.link} className="link-styler"><Button variant="secondary">¡Puedes verlo aqui!</Button></Link>
-                                : <a href={"https://www." + this.props.link} className="link-styler"><Button variant="secondary">¡Puedes verlo aqui!</Button></a>
-                            }
-                        </Tarjeta.Body>
-                    </Tarjeta>
-                </div>
+                <h2>{this.props.name}</h2>
+                <Row>
+                    {items}
+                </Row>
             </Container>
         );
     }
