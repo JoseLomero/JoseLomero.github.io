@@ -48,7 +48,7 @@ export default {
     },
     {
       name: 'MongoDB',
-      url: '/img/languages/mongodb.png'
+      url: '/img/languages/mongo.png'
     },
   ],
   "other": [
