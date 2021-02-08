@@ -12,6 +12,7 @@ class Components extends Component {
     render() {
         return (
             <Container>
+                <h1>Componentes</h1>
                 <Row className="content-center">
                     <Col>
                         <Card
@@ -20,6 +21,7 @@ class Components extends Component {
                             img={'/img/components-preview/calendario.jpg'}
                             internal={true}
                             link={"/calendario"}
+                            git={"https://github.com/JoseLomero/React-Calendar-with-modals"}
                         />
                     </Col>
                 </Row>
