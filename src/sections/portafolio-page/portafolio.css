@@ -1,0 +1,11 @@
+.content-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+}
+
+.cardGrouper {
+  width: 33vw;
+}
