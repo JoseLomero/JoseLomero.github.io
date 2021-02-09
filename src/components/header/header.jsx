@@ -11,7 +11,7 @@ class Header extends Component {
 
     render() {
         const sectionStyle = {
-            backgroundImage: "url(" + this.props.img + ")"
+            backgroundImage: "url(" + process.env.PUBLIC_URL + this.props.img + ")"
         };
 
         return (
@@ -26,7 +26,7 @@ class Header extends Component {
                     <h1>{this.props.title}</h1>
                     {this.props.avatar ?
                         <div className="portarit-icon">
-                            <img src={this.props.avatar} alt="portrait" />
+                            <img src={process.env.PUBLIC_URL + this.props.avatar} alt="portrait" />
                         </div>
                         : null
                     }

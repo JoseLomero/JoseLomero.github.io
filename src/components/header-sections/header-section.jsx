@@ -10,7 +10,7 @@ class HeaderSection extends Component {
 
     render() {
         const sectionStyle = {
-            backgroundImage: "url(" + this.props.img + ")"
+            backgroundImage: "url(" + process.env.PUBLIC_URL + this.props.img + ")"
         };
 
         return (
