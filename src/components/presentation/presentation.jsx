@@ -27,7 +27,7 @@ class Presentation extends Component {
                         : null
                     }
                     <div className="two-column">
-                        <img className="drawing-presentation" alt="img" src={this.props.img} />
+                        <img className="drawing-presentation" alt="img" src={process.env.PUBLIC_URL + this.props.img} />
                         <Card.Body className="columna">
                             {this.props.text ?
                                 <Card.Text>{this.props.text}</Card.Text>

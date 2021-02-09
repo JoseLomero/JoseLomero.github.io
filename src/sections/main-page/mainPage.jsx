@@ -89,7 +89,7 @@ class MainPage extends Component {
                                     <CardBootstrap.Text>Puedes ponerte en contacto conmigo a través de mi correo electronico o mi perfil de Linkedin.</CardBootstrap.Text>
                                     <div className="column-layer">
                                         <div className="column-element">
-                                            <img src="/img/icons/mail.png" className="contact-icon" alt="mail" />
+                                            <img src={process.env.PUBLIC_URL + "/img/icons/mail.png"} className="contact-icon" alt="mail" />
                                             <a href="mailto:joselomero0@gmail.com"><h5>joselomero0@gmail.com</h5></a>
                                         </div>
                                         {/* <div className="column-element">
@@ -97,7 +97,7 @@ class MainPage extends Component {
                                             <a href="https://github.com/JoseLomero"><Button variant="info">Visita mi repo en Github</Button></a>
                                         </div> */}
                                         <div className="column-element">
-                                            <img src="/img/icons/linkedin.png" className="contact-icon" alt="mail" />
+                                            <img src={process.env.PUBLIC_URL + "/img/icons/linkedin.png"} className="contact-icon" alt="mail" />
                                             <a href="https://www.linkedin.com/in/joselomero5/"><Button variant="info">Visita mi perfil en Linkedin</Button></a>
                                         </div>
                                     </div>

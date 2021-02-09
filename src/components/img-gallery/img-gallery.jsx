@@ -21,7 +21,7 @@ class ImgGallery extends Component {
                     data-aos-delay="300"
                     data-aos-offset="0">
                     <div>
-                        <img src={element.url} alt={element.name} className="language-icon" />
+                        <img src={process.env.PUBLIC_URL + element.url} alt={element.name} className="language-icon" />
                         <h5>{element.name}</h5>
                     </div>
                 </div>
