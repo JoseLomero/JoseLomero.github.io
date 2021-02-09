@@ -1,0 +1,22 @@
+.presentation-card {
+    margin: 5rem 0;
+}
+
+.two-column {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.columna {
+    width: 50%;
+}
+
+.drawing-presentation {
+  border-radius: 50%;
+  height: auto;
+  width: 50%;
+}

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-import { Card } from 'react-bootstrap';
+// Bootstrap y styles
+import { Card, Button } from 'react-bootstrap';
 import './presentation.css';
 
 class Presentation extends Component {
@@ -12,6 +14,7 @@ class Presentation extends Component {
     render() {
         return (
             <div
+                className="presentation-card"
                 data-aos={this.props.aos}
                 data-aos-easing={this.props.aosEasing}
                 data-aos-duration={this.props.aosDuration}
@@ -20,13 +23,30 @@ class Presentation extends Component {
                     border="light"
                     className="text-center"
                     style={{ width: '70vw' }}>
-                    <Card.Img variant="left" alt="img" src={this.props.img} />
-                    <Card.Body>
-                        <Card.Title>Jose</Card.Title>
-                        <Card.Text>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem et tempore saepe hic cum dolore iure aut! Reiciendis harum laudantium enim, vitae neque molestias nostrum similique perferendis nisi dolorum in.
-                    </Card.Text>
-                    </Card.Body>
+                    {this.props.title ?
+                        <Card.Header>{this.props.title}</Card.Header>
+                        : null
+                    }
+                    <div className="two-column">
+                        <img className="drawing-presentation" alt="img" src={this.props.img} />
+                        <Card.Body className="columna">
+                            {this.props.text ?
+                                <Card.Text>{this.props.text}</Card.Text>
+                                : null
+                            }
+                        </Card.Body>
+                        <Card.Body className="columna">
+                            {this.props.subtext ?
+                                <Card.Text>{this.props.subtext}</Card.Text>
+                                : null
+                            }
+                            {
+                                this.props.button ?
+                                    <Link to={this.props.buttonLink} className="link-styler"><Button variant="info">¡Comprueba cómo funciona!</Button></Link>
+                                    : null
+                            }
+                        </Card.Body>
+                    </div>
                 </Card>
             </div>
         );
