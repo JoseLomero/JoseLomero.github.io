@@ -23,8 +23,21 @@
 .hero-section h1 {
   /* Text styles */
   font-size: 5em;
-
+  
   /* Margins */
   margin-top: 0;
   margin-bottom: 0.5em;
+
+}
+
+@media only screen and (max-width: 780px) {
+  .hero-section h1 {
+    /* Text styles */
+    font-size: 3em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  
+  }
 }

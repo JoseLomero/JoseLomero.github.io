@@ -38,3 +38,9 @@
   width: 50%;
   margin-bottom: 1rem;
 }
+
+@media only screen and (max-width: 780px) {
+  .bullet-text {
+    font-size: 1.5rem;
+  }
+}

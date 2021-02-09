@@ -21,13 +21,13 @@ class Card extends Component {
                     <Tarjeta.Text className="tarjeta-text-stylizer">{this.props.text}</Tarjeta.Text>
                     {
                         this.props.internal ?
-                            <Link to={this.props.link} className="link-styler"><Button variant="info">¡Comprueba cómo funciona!</Button></Link>
-                            : <a href={"https://www." + this.props.link} target="_blank" rel="noreferrer" className="link-styler"><Button variant="info">¡Puedes verlo aqui!</Button></a>
+                            <Link to={this.props.link} className="link-styler"><Button variant="info" className="button-styler">¡Comprueba cómo funciona!</Button></Link>
+                            : <a href={"https://www." + this.props.link} target="_blank" rel="noreferrer" className="link-styler"><Button variant="info" className="button-styler">¡Puedes verlo aqui!</Button></a>
                     }
                     {
                         this.props.git ?
                             <a href={this.props.git} target="_blank" rel="noreferrer" className="link-styler git-button">
-                                <Button variant="info">Puedes verlo en Git!</Button>
+                                <Button variant="info" className="button-styler">Puedes verlo en Git!</Button>
                             </a>
                             : null
                     }

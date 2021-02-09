@@ -5,3 +5,10 @@
 
   margin: 0;
 }
+
+@media only screen and (max-width: 780px) {
+  .button-styler {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

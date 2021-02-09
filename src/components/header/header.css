@@ -30,7 +30,18 @@
 }
 
 .portarit-icon > img {
-    background-color: var(--color-gray);
-    border-radius: 50%;
-    width: 15vw;
+  background-color: var(--color-gray);
+  border-radius: 50%;
+  width: 15vw;
+}
+
+@media only screen and (max-width: 780px) {
+  .hero {
+  height: 30vh;
+
+  }
+  .hero h1 {
+    /* Text styles */
+    font-size: 3em;
+  }
 }
