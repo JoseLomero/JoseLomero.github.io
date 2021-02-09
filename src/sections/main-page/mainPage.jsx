@@ -36,8 +36,8 @@ class MainPage extends Component {
                         aos-duration={"1500"}
                         title={"Sobre mí"}
                         img={'/img/misc/drawing.jpeg'}
-                        text={"¡Buenas! Soy Jose Manuel, Desarrollador de Aplicaciones Web entregado a su trabajo y siempre con ganas de aprender.Tengo una alta habilidad para expresarme gracias a mi formación como actor y locutor, y soy capaz de analizar y sintetizar problemas para ayudar a los demás a entenderlos. Me dedico a hacer las páginas web accesibles y sencillas de entender para los demás."}
-                        subtext={"Me gustaría conseguir un puesto de trabajo como FrontEnd developer, pero he trabajado ya como Fullstack Developer y BackEnd Developer, ¡así que puedes estar seguro que aceptaré el reto que me lances y lograré realizarlo!"}
+                        text={"¡Buenas! Soy Jose Manuel, Desarrollador de Aplicaciones Web entregado a su trabajo y siempre con ganas de aprender. Tengo una gran habilidad para expresarme gracias a mi formación como actor y locutor, y soy capaz de analizar y sintetizar problemas para ayudar a los demás a entenderlos. Me dedico a hacer las páginas web accesibles y sencillas de entender para los demás."}
+                        subtext={"Me gustaría continuar mi trabajo como FrontEnd developer, pero he trabajado ya como Fullstack Developer y BackEnd Developer, ¡así que puedes estar seguro que aceptaré el reto que me lances y lograré realizarlo!"}
                     />
                     <Presentation
                         aos={"fade-left"}
