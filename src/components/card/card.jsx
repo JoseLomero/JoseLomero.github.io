@@ -13,7 +13,7 @@ class Card extends Component {
 
     render() {
         return (
-            <Tarjeta>
+            <Tarjeta className="full-height">
                 <Tarjeta.Header>{this.props.title}</Tarjeta.Header>
                 <Tarjeta.Body>
                     <img className="logo-card" alt="avatar" src={process.env.PUBLIC_URL + this.props.img} />
