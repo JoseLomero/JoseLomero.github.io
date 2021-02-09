@@ -9,7 +9,7 @@ import ImgGallery from '../../components/img-gallery/img-gallery';
 import languages from '../../backend/languages';
 
 // Bootstrap and styles
-import { Container, Row, Card as CardBootstrap } from 'react-bootstrap';
+import { Row, Card as CardBootstrap } from 'react-bootstrap';
 import './mainPage.css';
 class MainPage extends Component {
     constructor(props) {
@@ -34,7 +34,8 @@ class MainPage extends Component {
                         aos={"fade-right"}
                         aosEasing={"linear"}
                         aos-duration={"1500"}
-                        img={'/img/drawing.jpeg'}
+                        title={"Sobre mí"}
+                        img={'/img/misc/drawing.jpeg'}
                         text={"Desarrollador de Aplicaciones Web entregado a su trabajo y siempre con ganas de aprender.Tengo una alta habilidad para expresarme gracias a mi formación como actor y locutor, y soy capaz de analizar y sintetizar problemas para ayudar a los demás a entenderlos. Me dedico a hacer las páginas web accesibles y sencillas de entender para los demás."}
                         subtext={"Me gustaría conseguir un puesto de trabajo como FrontEnd developer, pero he trabajado ya como Fullstack Developer y BackEnd Developer, ¡así que puedes estar seguro que aceptaré el reto que me lances y lograré realizarlo!"}
                     />
@@ -42,23 +43,23 @@ class MainPage extends Component {
                         aos={"fade-left"}
                         aosEasing={"linear"}
                         aos-duration={"1500"}
-                        img={'/img/drawing.jpeg'}
-                        title={"Pero... ¿cómo contactarme?"}
-                        text={"¡No te preocupes! Yo te cubro. Puedes descubrir más pulsando el botón de contacto de aqui o en el apartado corrrespondiente en el menú"}
-                        button={"Ir a Contacto"}
-                        buttonLink={"/contact"}
+                        img={'/img/sections/componentes.png'}
+                        title={"Algunos trabajos propios son..."}
+                        text={"Una lista bastante escueta, ¡lo sé! Pero irá creciendo, de eso estoy totalmente seguro."}
+                        button={"Ir a Componentes"}
+                        buttonLink={"/components"}
                     />
                     <Presentation
                         aos={"fade-right"}
                         aosEasing={"linear"}
                         aos-duration={"1500"}
-                        img={'/img/drawing.jpeg'}
-                        title={"Pero... ¿cómo contactarme?"}
-                        text={"¡No te preocupes! Yo te cubro. Puedes descubrir más pulsando el botón de contacto de aqui o en el apartado corrrespondiente en el menú"}
-                        button={"Ir a Contacto"}
-                        buttonLink={"/contact"}
+                        img={'/img/sections/portafolio.png'}
+                        title={"Algunas de las webs en las que he trabajado"}
+                        text={"Trabajos hechos tanto en la consultora EMO Sistemas como en Pasaporte Escape Room. He hecho desde webs para centros médicos hasta tiendas online. ¡Y no nos olvidemos que trabajé en la creación de una intranet!"}
+                        button={"Échale un vistazo"}
+                        buttonLink={"/portafolio"}
                     />
-                    <div className="title">
+                    <div className="title-text">
                         <h2 className="bullet-text">Pero, ¿qué es lo que conozco?</h2>
                     </div>
                     <div className="languages-section">
@@ -83,8 +84,8 @@ class MainPage extends Component {
                         aos={"fade-left"}
                         aosEasing={"linear"}
                         aos-duration={"1500"}
-                        img={'/img/drawing.jpeg'}
-                        title={"¿Y cómo te contacto?"}
+                        img={'/img/misc/contact.jpg'}
+                        title={"¿Y cómo contacto contigo?"}
                         text={"¡No te preocupes! Yo te cubro. Puedes descubrir más pulsando el botón de contacto de aqui o en el apartado corrrespondiente en el menú"}
                         button={"Ir a Contacto"}
                         buttonLink={"/contact"}
