@@ -16,10 +16,7 @@ class HeaderSection extends Component {
         return (
             <div
                 className="hero-section"
-                style={sectionStyle}
-                data-aos={this.props.aos}
-                data-aos-easing={this.props.aosEasing}
-                data-aos-duration={this.props.aosDuration}>
+                style={sectionStyle}>
 
                 <div className="hero-section-inner">
                     <h1>{this.props.title}</h1>
