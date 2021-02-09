@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import MainPage from './sections/main-page/mainPage';
 import Components from './sections/components-page/components';
 import Portafolio from './sections/portafolio-page/portafolio';
+import NotFound from './sections/no-page/no-page';
 // import Contact from './sections/contact-page/contact';
 
 // Components
@@ -53,6 +54,7 @@ function App() {
           <Route path='/portafolio' component={Portafolio} />
           {/* <Route path='/contact' component={Contact} /> */}
           <Route path='/calendario' component={Calendario} />
+          <Route component={NotFound} />
         </Switch>
       </Container>
     </BrowserRouter>
