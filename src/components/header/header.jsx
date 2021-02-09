@@ -11,8 +11,6 @@ class Header extends Component {
 
     render() {
         const sectionStyle = {
-            // width: "100%",
-            // height: "400px",
             backgroundImage: "url(" + this.props.img + ")"
         };
 
