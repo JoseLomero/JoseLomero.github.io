@@ -9,7 +9,7 @@ import ImgGallery from '../../components/img-gallery/img-gallery';
 import languages from '../../backend/languages';
 
 // Bootstrap and styles
-import { Row, Card as CardBootstrap } from 'react-bootstrap';
+import { Row, Card as CardBootstrap, Button } from 'react-bootstrap';
 import './mainPage.css';
 class MainPage extends Component {
     constructor(props) {
@@ -78,18 +78,33 @@ class MainPage extends Component {
                         <CardBootstrap bg="light" className="card-spacer">
                             <ImgGallery language={languages.other} name={"Otros Conocimientos"} />
                         </CardBootstrap>
+                        <div
+                            className="contact"
+                            data-aos={"fade-left"}
+                            data-aos-easing={"linear"}
+                            data-aos-duration={"700"}>
+                            <CardBootstrap border="light">
+                                <CardBootstrap.Title>¿Y cómo puedo contactar contigo?</CardBootstrap.Title>
+                                <CardBootstrap.Body>
+                                    <CardBootstrap.Text>Puedes ponerte en contacto conmigo a través de mi correo electronico o mi perfil de Linkedin.</CardBootstrap.Text>
+                                    <div className="column-layer">
+                                        <div className="column-element">
+                                            <img src="/img/icons/mail.png" className="contact-icon" alt="mail" />
+                                            <a href="mailto:joselomero0@gmail.com"><h5>joselomero0@gmail.com</h5></a>
+                                        </div>
+                                        {/* <div className="column-element">
+                                            <img src="/img/icons/github.png" className="contact-icon" alt="mail" />
+                                            <a href="https://github.com/JoseLomero"><Button variant="info">Visita mi repo en Github</Button></a>
+                                        </div> */}
+                                        <div className="column-element">
+                                            <img src="/img/icons/linkedin.png" className="contact-icon" alt="mail" />
+                                            <a href="https://www.linkedin.com/in/joselomero5/"><Button variant="info">Visita mi perfil en Linkedin</Button></a>
+                                        </div>
+                                    </div>
+                                </CardBootstrap.Body>
+                            </CardBootstrap>
+                        </div>
                     </div>
-
-                    <Presentation
-                        aos={"fade-left"}
-                        aosEasing={"linear"}
-                        aos-duration={"1500"}
-                        img={'/img/misc/contact.jpg'}
-                        title={"¿Y cómo contacto contigo?"}
-                        text={"¡No te preocupes! Yo te cubro. Puedes descubrir más pulsando el botón de contacto de aqui o en el apartado corrrespondiente en el menú"}
-                        button={"Ir a Contacto"}
-                        buttonLink={"/contact"}
-                    />
                 </Row>
             </>
         );

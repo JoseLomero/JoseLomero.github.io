@@ -13,3 +13,28 @@
 .card-spacer {
   margin: 2rem 0 1rem;
 }
+
+.column-layer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.column-element {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+.contact-icon {
+  height: 15vh;
+  /* width: 30%; */
+  width: 50%;
+  margin-bottom: 1rem;
+}
