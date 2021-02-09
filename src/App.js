@@ -50,7 +50,6 @@ function App() {
       <Container className="fullwidth" fluid>
         <Switch>
           <Route exact path='/homepage' component={MainPage} />
-          {/* <Route path='/' component={MainPage} /> */}
           <Route path='/components' component={Components} />
           <Route path='/portafolio' component={Portafolio} />
           {/* <Route path='/contact' component={Contact} /> */}
