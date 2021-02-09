@@ -1,5 +1,9 @@
 .presentation-card {
-    margin: 5rem 0;
+  margin: 5rem 0 0;
+}
+
+.title-text {
+  margin-top: 5rem;
 }
 
 .two-column {
@@ -16,7 +20,7 @@
 }
 
 .drawing-presentation {
-  border-radius: 50%;
-  height: auto;
+  border-radius: 15px;
+  max-height: 50vh;
   width: 50%;
 }

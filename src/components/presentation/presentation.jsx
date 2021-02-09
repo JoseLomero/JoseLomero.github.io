@@ -20,7 +20,6 @@ class Presentation extends Component {
                 data-aos-duration={this.props.aosDuration}
             >
                 <Card
-                    border="light"
                     className="text-center"
                     style={{ width: '70vw' }}>
                     {this.props.title ?
@@ -42,7 +41,7 @@ class Presentation extends Component {
                             }
                             {
                                 this.props.button ?
-                                    <Link to={this.props.buttonLink} className="link-styler"><Button variant="info">¡Comprueba cómo funciona!</Button></Link>
+                                    <Link to={this.props.buttonLink} className="link-styler"><Button variant="info">{this.props.button}</Button></Link>
                                     : null
                             }
                         </Card.Body>
