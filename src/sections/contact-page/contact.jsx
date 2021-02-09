@@ -17,7 +17,7 @@ class Contact extends Component {
         return (
             <>
                 <HeaderSection
-                    title={"Conóceme mejor"}
+                    title={"Contacto"}
                     img={"/img/headers/contact.jpg"}
                 />
                 <Container>
@@ -27,7 +27,7 @@ class Contact extends Component {
                     </div>
                     <Row className="content-center">
                         <Col>
-                            <p>Text</p>
+                            <p>Puedes contactar conmigo a través del mail joselomero0@gmail.com</p>
                         </Col>
                     </Row>
                 </Container>
