@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './header.css';
+import './header-section.css';
 
 class HeaderSection extends Component {
     constructor(props) {
@@ -15,13 +15,13 @@ class HeaderSection extends Component {
 
         return (
             <div
-                className="hero"
+                className="hero-section"
                 style={sectionStyle}
                 data-aos={this.props.aos}
                 data-aos-easing={this.props.aosEasing}
                 data-aos-duration={this.props.aosDuration}>
 
-                <div className="hero-inner">
+                <div className="hero-section-inner">
                     <h1>{this.props.title}</h1>
                 </div>
             </div>
