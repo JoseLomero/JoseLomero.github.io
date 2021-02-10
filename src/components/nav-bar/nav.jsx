@@ -15,7 +15,7 @@ class NavigationBar extends Component {
     render() {
         return (
             <Navbar bg="dark" variant="dark" expand="lg">
-                <Link to="/"><Navbar.Brand>Jose Manuel Lomero</Navbar.Brand></Link>
+                <Link to="/homepage"><Navbar.Brand>Jose Manuel Lomero</Navbar.Brand></Link>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">

@@ -49,7 +49,7 @@ function App() {
       <Button className="scrollTop" onClick={scrollTop} style={{ height: 40, display: showScroll ? 'flex' : 'none' }}>Top</Button>
       <Container className="fullwidth" fluid>
         <Switch>
-          <Route exact path='/' component={MainPage} />
+          <Route exact path='/homepage' component={MainPage} />
           <Route path='/components' component={Components} />
           <Route path='/portafolio' component={Portafolio} />
           {/* <Route path='/contact' component={Contact} /> */}
