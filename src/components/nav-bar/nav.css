@@ -1,0 +1,15 @@
+.navigator-link {
+  color: rgba(255, 255, 255, 0.5);
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.navigator-link:focus,
+.navigator-link:hover {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+
+.nav-item .navigator-link {
+    display: inline;
+}
