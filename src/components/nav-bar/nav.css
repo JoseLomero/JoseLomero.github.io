@@ -13,3 +13,22 @@
 .nav-item .navigator-link {
     display: inline;
 }
+
+.contact-row {
+  float: right;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-row > a {
+  margin: 0 0.5rem;
+}
+
+.contact-row > a:hover {
+  color: var(--color-white);
+}
+
+.contact-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}

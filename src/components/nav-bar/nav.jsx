@@ -24,6 +24,10 @@ class NavigationBar extends Component {
                         <Nav.Item><Link to="/portafolio" className="navigator-link">Portafolio</Link></Nav.Item>
                         {/* <Nav.Item><Link to="/contact" className="navigator-link">Contacto</Link></Nav.Item> */}
                     </Nav>
+                    <div className="contact-row">
+                        <a href="mailto:joselomero0@gmail.com"><span>joselomero0@gmail.com</span></a>
+                        <a href="https://www.linkedin.com/in/joselomero5/"><img src={process.env.PUBLIC_URL + "/img/icons/linkedin.png"} className="contact-icon" alt="mail" /></a>
+                    </div>
                 </Navbar.Collapse>
             </Navbar >
         );
