@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 // Bootstrap and styles
-import { Container, Card as Tarjeta, Button } from 'react-bootstrap';
+import { Card as Tarjeta, Button } from 'react-bootstrap';
 import './card.css';
 
 class Card extends Component {
