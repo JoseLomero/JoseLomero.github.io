@@ -59,10 +59,10 @@ class MainPage extends Component {
                         button={"Échale un vistazo"}
                         buttonLink={"/portafolio"}
                     />
-                    <div className="title-text">
-                        <h2 className="bullet-text">Pero, ¿qué es lo que conozco?</h2>
-                    </div>
                     <div className="languages-section">
+                        <div className="title-text">
+                            <h2 className="bullet-text">Pero, ¿qué es lo que conozco?</h2>
+                        </div>
                         <CardBootstrap bg="light" className="card-spacer">
                             <ImgGallery language={languages.basics} name={"Conocimientos Básicos"} />
                         </CardBootstrap>

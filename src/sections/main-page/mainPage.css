@@ -10,6 +10,10 @@
   width: 70%;
 }
 
+.title-text {
+  width: 100%;
+}
+
 .card-spacer {
   margin: 2rem 0 1rem;
 }
